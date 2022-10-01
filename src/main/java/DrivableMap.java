@@ -54,8 +54,6 @@ class DrivableMap {
 
 
 
-
-
     /* TODO: Write a method named getTradable that takes no arguments and
      *       returns a List containing all of the Tradable items in
      *       drivable_map.
@@ -63,7 +61,7 @@ class DrivableMap {
     public List<Tradable> getTradable(){
         ArrayList<Tradable> tradableItems = new ArrayList<Tradable>();
         for (String id: drivable_map.keySet()){
-            if (drivable_map.get(id) instanceof Drivable){
+            if (drivable_map.get(id) instanceof Tradable){
                 tradableItems.add((Tradable) drivable_map.get(id));
             }
         }
